@@ -1,0 +1,284 @@
+MARKETING SOLUTIONS
+
+
+I apologize for misunderstanding your request. Here's the translation with Chinese right below the English:
+
+Welcome! We are Matrixwish Inc
+欢迎！我们是Matrixwish公司。
+
+Pioneer marketing solutions provider across the globe for over a decade now
+我们是全球超过十年历史的先驱营销解决方案提供商。
+
+We are one of the finest Market Researcher globally. Endowed with excellent email marketing and data management solutions we cater the exact needs of our audience. We furnish a complete list of prospective users and clients belonging to various industries. Our databases are updated quarterly to proffer you the best of data services and statistics in the market.
+我们是全球最优秀的市场调研公司之一。拥有卓越的电子邮件营销和数据管理解决方案，我们满足我们受众的确切需求。我们提供完整的潜在用户和来自不同行业的客户名单。我们的数据库每季度更新，为您提供市场上最优质的数据服务和统计信息。
+
+Our Mission
+我们的使命
+
+At Matrixwish we desire to satisfy our customers with the highest rate of ROI possible. We focus on presenting our customers with appropriate mailing and email lists with the addition of business intelligence.
+在Matrixwish，我们希望以最高的投资回报率来满足客户的需求。我们专注于为客户提供适当的邮寄和电子邮件列表，并增加商业智能的内容。
+
+We commit to guaranteeing you maximum sales and lead generation and conversion. At Matrixwish we will help you in gaining more business connections from time to time.
+我们承诺为您保证最大限度的销售和潜在客户生成以及转化率。在Matrixwish，我们将帮助您不断建立更多的商业联系。
+
+Our database comprises the latest information with the least redundancy. It helps give a clear picture of how to generalize your campaigns. We deliver dedicated results and have a list of satisfied customers who benefit from our services.
+我们的数据库包含最新的信息，冗余最少。它有助于清晰地展示如何总结您的营销活动。我们提供专注的结果，并拥有一份受益于我们服务的满意客户名单。
+
+Matrixwish has enabled various organizations to accelerate and maximize their lead-to-money process. Equipping a complete suite of solutions identifying the right leads, ensure proper territory and quota distribution. It has an entire team that helps to automate sales forces, configure your price quotes, and streamline your sales compensation to drive bigger deals faster.
+Matrixwish已经帮助各种组织加速和最大化了他们的从潜在客户到收益的过程。提供了一整套解决方案，可以识别正确的潜在客户，确保适当的领域和配额分配。它拥有一个完整的团队，帮助自动化销售团队，配置您的价格报价，并简化销售报酬以推动更大的交易。
+
+
+
+**Version Control Basics:**
+- Version control software enables the creation of project snapshots at different working states.
+- It facilitates the ability to revert to a previous state if the current state is problematic.
+- Particularly crucial for large projects but beneficial for smaller projects as well.
+
+**Git Installation:**
+- Git is the most widely used version control software.
+- Available for all operating systems with specific installation methods for each.
+- Check if Git is already installed using the command `git --version`.
+
+**Configuring Git:**
+- Git tracks project changes and requires user information (username and email).
+- Configuration commands:
+  - Set username: `$ git config --global user.name "username"`
+  - Set email: `$ git config --global user.email "username@example.com"`
+  - Set default branch name: `$ git config --global init.defaultBranch main`
+
+
+
+**Ignoring Files:**
+- Some files are not necessary to track (e.g., `.pyc` files).
+- Create a `.gitignore` file to specify files or directories to be ignored.
+- Example `.gitignore` content: `__pycache__/` and if you’re on macOS, add one more line to .gitignore. Add the name .DS_Store; these are hidden files that contain information about each directory on macOS, and they will clutter up your project if you don’t add them to .gitignore.
+
+**Initializing a Repository:**
+- Use the command `git init` to initialize a Git repository in the project folder.
+- Git repository information is stored in the hidden directory `.git`.
+
+**Checking Project Status:**
+- Use `git status` to check the status of the project.
+- Displays branch information, untracked files, and commit status.
+
+**Adding Files to the Repository:**
+- Utilize `git add .` to stage all untracked files for the next commit.
+- Use `git status` to confirm changes added to the staging area.
+
+**Making a Commit:**
+- Commit changes with the command `git commit -m "message"`.
+- The `-m` flag allows adding a commit message.
+- Commit message example: "Started project."
+- Output includes branch information, file changes, and insertions.
+
+
+
+**Viewing Commit History:**
+- Use `git log` to display a detailed commit history.
+- Each commit has a unique 40-character reference ID, author information, timestamp, and commit message.
+
+**Simplified Commit Log:**
+- Use `git log --pretty=oneline` for a simplified view showing commit reference ID and commit message.
+
+**Making Additional Commits:**
+- Demonstrated making changes to the project by adding a line to `hello_git.py`.
+- Checked the status to identify modified files.
+- Committed changes using `git commit -am "Extended greeting."`.
+
+**Abandoning Changes:**
+- Introduced the concept of abandoning changes and reverting to the last committed state.
+- Used `git restore .` to discard all changes made since the last commit.
+
+**Checking Out Previous Commits:**
+- Checked out previous commits using `git checkout <reference ID prefix>` (e.g., `git checkout cea13d`).
+- When checking out a previous commit, entered a "detached HEAD" state.
+- Used `git switch -` to return to the main branch from the detached HEAD state.
+
+**Resetting to a Previous Commit:**
+- Checked project status, viewed commit history, and identified the commit to reset to.
+- Used `git reset --hard <reference ID>` to permanently reset the project to a previous commit.
+- Checked status and confirmed the log to ensure the successful reset.
+
+**Viewing Commit History:**
+- Use `git log` to display a detailed commit history.
+- Each commit has a unique 40-character reference ID, author information, timestamp, and commit message.
+
+**Simplified Commit Log:**
+- Use `git log --pretty=oneline` for a simplified view showing commit reference ID and commit message.
+
+**Making Additional Commits:**
+- Demonstrated making changes to the project by adding a line to `hello_git.py`.
+- Checked the status to identify modified files.
+- Committed changes using `git commit -am "Extended greeting."`.
+
+**Abandoning Changes:**
+- Introduced the concept of abandoning changes and reverting to the last committed state.
+- Used `git restore .` to discard all changes made since the last commit.
+
+**Checking Out Previous Commits:**
+- Checked out previous commits using `git checkout <reference ID prefix>` (e.g., `git checkout cea13d`).
+- When checking out a previous commit, entered a "detached HEAD" state.
+- Used `git switch -` to return to the main branch from the detached HEAD state.
+
+**Resetting to a Previous Commit:**
+- Checked project status, viewed commit history, and identified the commit to reset to.
+- Used `git reset --hard <reference ID>` to permanently reset the project to a previous commit.
+- Checked status and confirmed the log to ensure the successful reset.
+
+**Identifying Repository Status:**
+- Use `git status` to check the status of the repository.
+- Ensure a clean working directory before making changes.
+
+**Deleting Repository History:**
+- If repository history is irreversibly messed up, and help is not available, consider deleting the `.git` directory.
+- Delete `.git` either via a file browser or using the command line (`rm -rf .git/` on Unix-based systems, `del .git` on Windows).
+
+**Reinitializing a Repository:**
+- After deleting the `.git` directory, reinitialize the repository using `git init`.
+- Check the status to confirm the new, empty repository state.
+
+**Adding Files and Making Initial Commit:**
+- Use `git add .` to stage all untracked files.
+- Make the initial commit with `git commit -m "Starting over."`.
+
+**Verifying Repository Status:**
+- Confirm a clean working tree with `git status`.
+- The repository is now ready for new commits.
+
+
+**Overview of Git:**
+- Git is a command-line tool for version control, allowing users to track changes, synchronize code among collaborators, work on different branches, and revert to earlier versions.
+- Git provides the capability to manage code snapshots and synchronize code between local and remote repositories.
+
+**Git Terminology:**
+- *Repository:* A file location storing all files related to a project, either remote (online) or local (on the computer).
+- *Commit:* Saving changes and taking a snapshot of the current code state.
+- *Branch:* A separate line of development, useful for isolating features or changes.
+
+**GitHub:**
+- GitHub is a web platform for remote storage of Git repositories.
+- Steps to create a new repository on GitHub are provided, including naming, description, and public/private settings.
+
+**Working with Git:**
+- Cloning a repository: Downloading a remote repository to the local computer using `git clone <repository url>`.
+- Adding files: Creating and tracking new files in the repository using `git add`.
+- Commits: Taking a snapshot of changes with `git commit -m "some message"`.
+- Pushing changes: Publishing local commits to GitHub with `git push`.
+- Pulling changes: Updating the local repository with remote changes using `git pull`.
+
+**Merge Conflicts:**
+- Occur when changes conflict between collaborators.
+- Resolving conflicts by choosing between conflicting changes.
+
+**Git Log and Reverting:**
+- `git log`: Provides a history of commits.
+- Reverting to a previous commit using `git reset`.
+
+**Branching:**
+- Branching allows for the creation of separate development lines for features or changes.
+- Creating a new branch with `git checkout -b <new branch name>`.
+- Merging branches with `git merge <other branch name>`.
+
+**GitHub Features:**
+- *Forking:* Creating a personal copy of a repository on GitHub.
+- *Pull Requests:* Requesting changes made in a forked repository to be merged into the main repository.
+- *GitHub Pages:* Publishing a static site to the web using GitHub.
+
+
+To create a new branch named "new-email" in Git, you can use the following command:
+
+```bash
+git checkout -b new-email
+```
+
+This command creates a new branch named "new-email" and switches to that branch, all in one step. If you prefer to create the branch and switch to it in separate steps, you can use the following commands:
+
+```bash
+# Create a new branch
+git branch new-email
+
+# Switch to the new branch
+git checkout new-email
+```
+
+Both methods achieve the same result: the creation of a new branch named "new-email," and you are now working on that branch. Choose the method that best fits your workflow or preference.
+
+
+
+Git/Github Summary List:
+
+1. **Sign Up on GitHub:**
+   - Go to https://github.com and sign up if you don't have an account.
+
+2. **Create a Repository:**
+   - Click on the "+" at the top-right and select "New repository."
+   - Name it (e.g., moviereviews), choose Public, and click "Create repository."
+
+3. **Install Git:**
+   - Ensure Git is installed by running `git` in the terminal.
+   - If not installed, visit https://git-scm.com/downloads and follow instructions.
+
+4. **Initiate Git in Local Project:**
+   - In the project folder, run `git init` to mark it as a Git project.
+
+5. **Track Changes and Make Initial Commit:**
+   - Run `git add .` to stage changes.
+   - Run `git commit -m "first version"` to create a save point.
+
+6. **Create Main Branch:**
+   - Run `git branch -M main` to create a branch called main.
+
+7. **Connect to GitHub Repository:**
+   - On the GitHub repository page, copy the "git remote add origin <your-origin-path>" command.
+   - Run this command in the terminal (replace <your-origin-path>).
+
+8. **Upload Code to GitHub:**
+   - Run `git push -u origin main` to move the code from your local machine to GitHub.
+
+Pythonanywhere Summary List:
+
+1. **Create PythonAnywhere Account:**
+   - Register for a free beginner account at https://www.pythonanywhere.com/registration/register/beginner/.
+
+2. **Access PythonAnywhere Console:**
+   - In PythonAnywhere, go to Dashboard -> New console -> $ Bash to open the Linux Terminal.
+
+3. **Clone GitHub Repository:**
+   - In the GitHub repository, click on "Code" and copy the repository URL.
+   - In the PythonAnywhere Bash shell, run `git clone <repo-url>` (e.g., `git clone https://github.com/danielgara/moviereviews.git`).
+
+4. **Verify Clone:**
+   - After the clone completes, use the 'ls' command in Bash to see a folder with the repository name, containing the code.
+
+
+VirtualEnv Summary List:
+
+1. **Why Use Virtual Environments:**
+   - Virtual environments keep project dependencies separate for different projects.
+
+2. **Create Virtual Environment:**
+   - In PythonAnywhere bash, run `mkvirtualenv -p python3.8 <environment name>` (e.g., `mkvirtualenv -p python3.8 moviereviewsenv`).
+
+3. **Activate Virtual Environment:**
+   - You'll see the virtual environment name in the bash prompt, indicating activation (Figure 12.10).
+
+4. **Install Django and Pillow:**
+   - Inside the virtual environment, run `pip install django pillow`.
+
+5. **Verify Installation:**
+   - Confirm successful installation with a message (Figure 12.11).
+
+To get our code on sites such as PythonAnywhere, we need our code to be on a code-sharing site such as GitHub or Bitbucket. 
+Git is a version control for projects and is very popular in the development world. It allows us to have save points (Git calls them commits) in our code. If we make mistakes in our project at any point in time, we can go back to previous save points when the project is working. Git also allows multiple developers to work on the project together without worrying about one overwriting the code of another.git init marks your folder as a Git project where you can begin to track changes. A hidden folder, .git, is added to the project folder. The .git folder stores all the objects and refs that Git uses and creates as part of your project's history.
+git add .
+This adds everything in your project to the staging environment to prepare a snapshot before committing it to the official history.
+git commit -m "first version"
+
+This creates a save point in your code. You can identify different commits by the descriptive messages you provide.
+git branch -M main
+
+We create a branch called main. This will be the place in which we store our application code.
+PythonAnywhere is a web-hosting service (https://www.pythonanywhere.com/). You can host, run, and code Python in the cloud. It also offers some free services, which we will use.
+The steps to deploy an existing Django project on PythonAnywhere can be found at https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/.
+Virtual environments are used to create separate development environments for different projects with different requirements. For example, you can specify which version of Python and which libraries/modules you want to be installed in a particular virtual environment.
+

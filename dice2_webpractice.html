@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3D Dice Roll-Bill's web practice</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #diceContainer {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        #dice {
+            width: 100px;
+            height: 100px;
+            perspective: 1000px;
+        }
+        .dice {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+        }
+        .face {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #000;
+            border-radius: 15px;
+            font-size: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .front {
+            transform: translateZ(50px);
+        }
+        .back {
+            transform: rotateY(180deg) translateZ(50px);
+        }
+        .right {
+            transform: rotateY(90deg) translateZ(50px);
+        }
+        .left {
+            transform: rotateY(-90deg) translateZ(50px);
+        }
+        .top {
+            transform: rotateX(90deg) translateZ(50px);
+        }
+        .bottom {
+            transform: rotateX(-90deg) translateZ(50px);
+        }
+        #rollButton {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        @keyframes rollDice {
+            0% {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            100% {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="diceContainer">
+        <div id="dice" class="dice">
+            <div class="face front">1</div>
+            <div class="face back">6</div>
+            <div class="face right">5</div>
+            <div class="face left">2</div>
+            <div class="face top">3</div>
+            <div class="face bottom">4</div>
+        </div>
+        <button id="rollButton">Roll</button>
+    </div>
+    <!-- <h1>Hi</h1> -->
+    <script>
+        function rollDice() {
+            const min = 1;
+            const max = 6;
+            const result = Math.floor(Math.random() * (max - min + 1)) + min;
+            const frontFace = document.querySelector('.face.front');
+
+            document.getElementById('dice').style.animation = 'none';
+
+            setTimeout(function () {
+                document.getElementById('dice').style.animation = 'rollDice 1s ease-in-out forwards';
+                setTimeout(function () {
+                    frontFace.textContent = result;
+                }, 500);
+            }, 50);
+        }
+
+        document.getElementById('rollButton').addEventListener('click', rollDice);
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+{% extends 'base.html' %} 
+
+{% block style %}
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 200px;
+    }
+
+    #result {
+      margin-top: 10px;
+    }
+
+    .btn-container {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .btn-container button {
+      margin-right: 10px;
+    }
+  </style>
+{% endblock style %}
+
+{% block content %}
+  <h1>Email Extractor</h1>
+  <p>Enter your text below and click the "Extract&Copy Emails" button to find all email addresses:</p>
+  <textarea id="textInput" placeholder="Enter text here..."></textarea>
+  <div class="btn-container">
+    <button class="btn btn-primary" onclick="extractAndCopyEmails()">Extract&Copy Emails</button>
+    <button class="btn btn-secondary" onclick="supperExtractFromPaste()">Supper Extract (from paste)</button>
+    <button class="btn btn-secondary" onclick="guessNames()">Guessing Names</button>
+    <button class="btn btn-secondary" onclick="clearText()">Clear Text</button>
+    <button class="btn btn-secondary" onclick="clearResult()">Clear Result</button>
+  </div>
+
+  <div id="result"></div>
+
+  <!-- Add Bootstrap JS and the JavaScript file -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  {% load static %}
+  <script src="{% static 'js/script3.js' %}"></script>
+
+
+{% endblock content %} 
+
+
+
