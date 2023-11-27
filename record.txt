@@ -29,6 +29,12 @@ Matrixwish已经帮助各种组织加速和最大化了他们的从潜在客户�
 
 
 
+mkvirtualenv -p python3.8 half_full_env
+
+
+
+
+
 **Version Control Basics:**
 - Version control software enables the creation of project snapshots at different working states.
 - It facilitates the ability to revert to a previous state if the current state is problematic.
@@ -282,3 +288,189 @@ PythonAnywhere is a web-hosting service (https://www.pythonanywhere.com/). You c
 The steps to deploy an existing Django project on PythonAnywhere can be found at https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/.
 Virtual environments are used to create separate development environments for different projects with different requirements. For example, you can specify which version of Python and which libraries/modules you want to be installed in a particular virtual environment.
 
+
+
+
+
+Setting up your web app
+ Summary:
+
+1. **Required Information:**
+   - Path to Django project's top folder (contains "manage.py").
+   - Name of the project (folder containing settings.py).
+   - Name of the virtualenv.
+
+2. **Setting up Web App on PythonAnywhere:**
+   - Open PythonAnywhere dashboard.
+   - Navigate to the Web tab and click "Add a new web app."
+   - Choose "Manual configuration" (not Django for existing projects).
+   - Select the Python version used in the virtualenv.
+
+3. **Web App Configuration:**
+   - Enter virtualenv name in the Virtualenv section.
+   - Set the project folder path for Source code and Working directory.
+   - Access the wsgi.py file in the Code section and edit it.
+   - Delete everything except the Django section and customize paths.
+   - Save the wsgi.py file.
+Be sure to substitute the correct path to your project, the folder that contains the manage.py file:
+
+path = '/home/danielgara/moviereviews'
+
+Make sure you put the correct value for DJANGO_SETTINGS_MODULE (where the settings.py file is located):
+
+os.environ['DJANGO_SETTINGS_MODULE'] =
+
+  'moviereviews.settings'
+
+
+4. **Deactivating and Reactivating Virtualenv:**
+   - To exit virtualenv: run `deactivate` in Bash.
+   - To re-enter virtualenv: run `workon <virtualenv-name>`.
+
+5. **Update ALLOWED_HOSTS in settings.py:**
+   - Navigate to the PythonAnywhere Files tab.
+   - Access the source code directory and go to moviereviews/settings.py.
+   - Modify the ALLOWED_HOSTS variable to include `['*']` for development.
+   - Save the settings.py file.
+
+6. **Reload Web App:**
+   - In the Web tab, click the "Reload" button for your domain.
+
+7. **Viewing the Web App:**
+   - Visit the project's URL (blue link in the PythonAnywhere dashboard).
+   - Verify that the home page is now accessible.
+
+8. **Note on ALLOWED_HOSTS:**
+   - ALLOWED_HOSTS is a security measure. Use the asterisk (*) wildcard for development, explicitly list domains in production.
+
+9. **Upcoming Fix for Static Images:**
+   - Acknowledge that static images are not yet displaying.
+   - A fix for static images will be addressed in the next section.
+
+
+
+Configuring static files
+Summary:
+
+1. **Update settings.py:**
+   - Add the following lines in settings.py on the PythonAnywhere website:
+     ```python
+     STATIC_URL = 'static/'
+     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+     DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+     MEDIA_URL = '/media/'
+     ```
+   - `STATIC_URL`: URL to serve static files.
+   - `STATIC_ROOT`: Central location to collect all static files.
+   - `MEDIA_ROOT` and `MEDIA_URL`: Configuration for media files.
+
+2. **Collect Static Files:**
+   - In the Bash console (inside the virtualenv), navigate to the project folder (where manage.py is located):
+     ```bash
+     cd moviereviews/
+     ```
+   - Execute the following command to collect static files:
+     ```bash
+     python manage.py collectstatic
+     ```
+   - Rerun this command whenever you update static files.
+
+3. **Set Up Static File Mapping:**
+   - In the PythonAnywhere dashboard's Web tab, under Static files:
+     - Enter the same URL as `STATIC_URL` in the URL section (typically, /static/).
+     - Enter the path from `STATIC_ROOT` into the path section (e.g., /home/username/moviereviews/static).
+
+4. **Reload Web App:**
+   - On the Web tab, hit the "Reload" button.
+   - Static images should now appear on your site.
+
+5. **Publishing New Versions:**
+   - Rerun `python manage.py collectstatic` whenever you want to publish new versions of your static files.
+
+6. **Verify Results:**
+   - Check the web app to ensure that static images are now displaying correctly on the home page.
+
+
+
+Summary:
+
+1. **Set DEBUG to False:**
+   - For production deployment, set DEBUG to False in the project's settings.py on PythonAnywhere.
+   - DEBUG=True is suitable for local development but should be hidden in production to avoid exposing sensitive information.
+   - After updating settings.py, save the file and reload the web app on PythonAnywhere.
+
+2. **.gitignore:**
+   - Create a .gitignore file in the project root folder to specify files or directories to be ignored when pushing to GitHub.
+   - Example .gitignore content:
+     ```
+     __pycache__/
+     db.sqlite3
+     .DS_Store
+     ```
+   - Ignore automatically generated files/directories and database files.
+
+3. **Changing Database to MySQL or PostgreSQL:**
+   - Switch from the default SQLite database to MySQL or PostgreSQL as the project/data size grows.
+   - PythonAnywhere offers free MySQL usage; for PostgreSQL, a paid account is required.
+   - Follow PythonAnywhere's documentation for using MySQL: https://help.pythonanywhere.com/pages/UsingMySQL/.
+   - After setting up the new database, create a new superuser and run `makemigrations` and `migrate` commands.
+
+4. **Overall Summary:**
+   - The tutorial covers Django's major features, including templates, views, URLs, user authentication, authorization, models, and deployment.
+   - CRUD functionality demonstrated in the Reviews app is applicable to various web applications like blogs, to-do lists, or shopping carts.
+   - Readers are now equipped with the knowledge to build their own websites using Django.
+   - Encouragement to explore further and continue learning.
+
+
+{% extends 'some_foldername/some_basename.html' %}
+
+{% block content %}
+  {% if some_condition %}
+    <p>Condition is true.</p>
+  {% elif another_condition %}
+    <ul>
+      {% for item in items %}
+        <li>{{ item.name }}</li>
+        <li>{{ item.date_added|date:'M d, Y H:i' }}</li>
+        <li>{{ item.text|linebreaks }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p><a href="{% url 'app_name:view_name' arg1 arg2 %}">Link</a></p>
+  {% endif %}
+
+  {% if form.errors %}
+    <p>
+      Your username and password didn't match.
+      Please try again.
+    </p>
+  {% endif %}
+
+  <form action="{% url 'users:login' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_div }}
+    <button name="submit">Log in</button>
+  </form>
+{% endblock %}
+
+
+
+
+CRUD
+CU: Author.objects.create(name='John Doe'); new_task.save()
+R: Task.objects.get(id=1);Task.objects.all()
+D:task_to_delete.delete()
+
+
+
+
+Task.objects.filter(description__icontains='Django')
+Task.objects.filter(id=1).update(title='Updated Title')
+Task.objects.filter(description__icontains='Django').delete()
+
+author, created = Author.objects.get_or_create(name='New Author')
+topic = models.ForeignKey(Topic, on_delete=models.CASCADE, related_name='entries')
+
+
+In Django, when you define a ForeignKey in a model, a reverse relation is automatically created. This reverse relation is named by default as <model_name>_set. In your case, if you have a Topic model and an Entry model with a ForeignKey field pointing to Topic, the default reverse relation is entry_set.
