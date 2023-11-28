@@ -1,0 +1,95 @@
+Certainly! Understanding the terminology associated with SEO (Search Engine Optimization) and SEM (Search Engine Marketing) is essential for effectively navigating these digital marketing strategies. Here's a list of key terms for each:
+
+### SEO (Search Engine Optimization) Terminology:
+
+1. **Keyword:**
+   - A specific word or phrase that users enter into search engines when looking for information.
+
+2. **SERP (Search Engine Results Page):**
+   - The page displayed by search engines in response to a user's query, showing a list of results.
+
+3. **Organic Search:**
+   - Non-paid search results that appear on SERPs based on their relevance to the user's query.
+
+4. **Crawling:**
+   - The process by which search engine bots systematically browse and index web pages.
+
+5. **Indexing:**
+   - Storing and organizing the content of web pages in a search engine's database.
+
+6. **Algorithm:**
+   - The complex set of rules and criteria search engines use to determine the order of results on a SERP.
+
+7. **Meta Tags:**
+   - HTML tags that provide metadata about a webpage, including titles, descriptions, and keywords.
+
+8. **Backlink:**
+   - A link from one website to another. High-quality backlinks can improve a site's authority.
+
+9. **Anchor Text:**
+   - The clickable text in a hyperlink, usually indicating the content it links to.
+
+10. **Alt Text:**
+    - Descriptive text for images that helps search engines understand the content.
+
+11. **Canonical URL:**
+    - A preferred URL for a page, used to avoid duplicate content issues.
+
+12. **Robots.txt:**
+    - A file that instructs search engine bots on which pages to crawl or ignore on a website.
+
+13. **Sitemap:**
+    - A file that provides a list of URLs on a site, assisting search engines in crawling and indexing.
+
+14. **404 Error:**
+    - A standard HTTP response code indicating that the server did not find the requested page.
+
+### SEM (Search Engine Marketing) Terminology:
+
+1. **PPC (Pay-Per-Click):**
+   - An advertising model where advertisers pay a fee each time their ad is clicked.
+
+2. **Ad Auction:**
+   - The process through which search engines determine which ads to show and in what order based on bids and relevance.
+
+3. **CTR (Click-Through Rate):**
+   - The percentage of people who click on an ad after seeing it, calculated by dividing clicks by impressions.
+
+4. **Impressions:**
+   - The number of times an ad is displayed to users.
+
+5. **Quality Score:**
+   - A metric used by search engines to measure the relevance and quality of ads and keywords.
+
+6. **Ad Rank:**
+   - The position of an ad on a SERP, determined by the Quality Score and bid amount.
+
+7. **Conversion:**
+   - A desired action taken by a user after clicking on an ad, such as making a purchase or filling out a form.
+
+8. **Landing Page:**
+   - The webpage where users are directed after clicking on an ad.
+
+9. **Bidding:**
+   - The process of setting the maximum amount an advertiser is willing to pay for a click on their ad.
+
+10. **Campaign:**
+    - A set of ad groups and ads centered around a common goal or theme.
+
+11. **Ad Group:**
+    - A set of ads within a campaign that target a specific set of keywords.
+
+12. **Remarketing:**
+    - Advertising to users who have previously visited a website, encouraging them to return.
+
+13. **Ad Extensions:**
+    - Additional information or features added to ads to provide more context or encourage user interaction.
+
+14. **Negative Keywords:**
+    - Keywords that prevent ads from being shown when certain terms are present in a user's search query.
+
+These terms provide a foundation for understanding the language of SEO and SEM, and they can be valuable for anyone looking to navigate the world of digital marketing.
+
+
+
+[GA4] Set up Analytics for a website and/or app
