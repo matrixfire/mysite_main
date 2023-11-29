@@ -353,6 +353,11 @@ Configuring static files
 Summary:
 
 1. **Update settings.py:**
+
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
+
+
    - Add the following lines in settings.py on the PythonAnywhere website:
      ```python
      STATIC_URL = 'static/'
@@ -474,3 +479,16 @@ topic = models.ForeignKey(Topic, on_delete=models.CASCADE, related_name='entries
 
 
 In Django, when you define a ForeignKey in a model, a reverse relation is automatically created. This reverse relation is named by default as <model_name>_set. In your case, if you have a Topic model and an Entry model with a ForeignKey field pointing to Topic, the default reverse relation is entry_set.
+
+
+
+
+
+
+
+
+2023.11.29
+
+https://fengmei.medium.com/adding-a-wysiwyg-editor-to-your-django-forms-2d9a0e47e755
+
+

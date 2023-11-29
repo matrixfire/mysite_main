@@ -52,7 +52,9 @@ INSTALLED_APPS = [
     'dashboard',
     'item',
 
+
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -158,6 +160,6 @@ STATICFILES_DIRS = [
 LOGIN_URL = 'loginaccount'
 
 # need to understand what does these do?!
-# LOGIN_URL = '/login/'
-# LOGIN_REDIRECT_URL = '/'
-# LOGOUT_REDIRECT_URL = '/'
+LOGIN_URL = '/core/login/'
+LOGIN_REDIRECT_URL = '/core/login/'
+LOGOUT_REDIRECT_URL = '/core/login/'
