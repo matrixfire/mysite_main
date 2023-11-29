@@ -38,6 +38,7 @@ urlpatterns = [
     path('core/', include('core.urls', namespace='core')),
     path('dashboard/', include('dashboard.urls', namespace='dashboard')),
     path('item/', include('item.urls', namespace='item')),
+    
 ]
 
 # why? I should look it up
@@ -45,5 +46,5 @@ urlpatterns += static(settings.MEDIA_URL,
     document_root=settings.MEDIA_ROOT)
 
 
-# def make_path(app_name):
-#     print(f"path('{app_name}/', include('{app_name}.urls', namespace='{app_name}')),")
+def make_path(app_name):
+    print(f"path('{app_name}/', include('{app_name}.urls', namespace='{app_name}')),")

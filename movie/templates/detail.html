@@ -16,7 +16,7 @@
             </a>
           {% endif %}
           {% if user.is_authenticated %}
-          <a href="{% url 'createreview' movie.id %}" 
+          <a href="{% url 'movie:createreview' movie.id %}" 
             class="btn btn-primary">
             Add Review
           </a>
@@ -36,11 +36,11 @@
             <p class="card-text">{{ review.text }}</p>
             {% if user.is_authenticated and user == review.user %} 
             <a class="btn btn-primary me-2" 
-              href="{% url 'updatereview' review.id %}">
+              href="{% url 'movie:updatereview' review.id %}">
               Update
             </a>
             <a class="btn btn-danger"
-              href="{% url 'deletereview' review.id %}">
+              href="{% url 'movie:deletereview' review.id %}">
               Delete
             </a>
             {% endif %}
